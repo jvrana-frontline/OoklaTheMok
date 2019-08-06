@@ -12,6 +12,7 @@ namespace OoklaTheMok.Models
         public string FieldType { get; set; }
         public int FieldLength { get; set; }
         public bool Nullable { get; set; }
+        public bool FieldLengthMax { get; set; }
         public bool IsKey { get; set; }
         public string ModifiedFieldName { get; set; }
         public string ModifiedFieldType { get; set; }

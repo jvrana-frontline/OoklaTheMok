@@ -88,7 +88,15 @@ namespace OoklaTheMok
                 if (MaxLength.Any() && !f.FieldName.StartsWith("txt"))
                 {
                     Facet facet = MaxLength.First();
-                    f.FieldLength = Convert.ToInt16(facet.Value);
+                    if (facet.Value.ToString() == "Max")
+                    {
+                        f.FieldLengthMax = true;
+                    }
+                    else
+                    {
+                        f.FieldLength = Convert.ToInt16(facet.Value);
+                        f.FieldLengthMax = false;
+                    }
                 }
 
                 td.Fields.Add(f);
@@ -161,7 +169,7 @@ namespace OoklaTheMok
             sb.AppendLine("        {");
             foreach (FieldDetails field in details.Fields)
             {
-                if (field.ModifiedFieldType == "string" && !field.FieldName.StartsWith("txt"))
+                if (field.ModifiedFieldType == "string" && !field.FieldName.StartsWith("txt")  && field.FieldLengthMax == false)
                 {
                     sb.AppendLine($"            RuleFor(x => x.{field.ModifiedFieldName}).{field.NullText}().Length(0, {field.FieldLength});");
                 }
