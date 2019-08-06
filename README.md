@@ -1,8 +1,8 @@
 # OoklaTheMok
-To make it easy, the app assumes a SQL Server database on localhost with the tables in it using integrated security.
+Currently the app assumes a SQL Server database on localhost with the tables in it using integrated security.
 
 To go against the DEV db:
-update the connection string in the config file:
+update the data source in the connection string in the config file:
 
     <add name="MLPEntities" connectionString="metadata=res://*/FrontlineModel.csdl|res://*/FrontlineModel.ssdl|res://*/FrontlineModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=INTPGSQL1Q.fltms.aws;initial catalog=MLP;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
 
