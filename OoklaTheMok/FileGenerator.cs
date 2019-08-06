@@ -74,6 +74,7 @@ namespace OoklaTheMok
 
                 FieldDetails f = new FieldDetails();
                 f.FieldName = col;
+                f.ConvertField();
                 var facets = entityType.Properties[col].TypeUsage.Facets;
 
 
@@ -84,7 +85,7 @@ namespace OoklaTheMok
                 }
 
                 var MaxLength = from c in facets where c.Name == "MaxLength" select c;
-                if (MaxLength.Any())
+                if (MaxLength.Any() && !f.FieldName.StartsWith("txt"))
                 {
                     Facet facet = MaxLength.First();
                     f.FieldLength = Convert.ToInt16(facet.Value);
@@ -160,7 +161,7 @@ namespace OoklaTheMok
             sb.AppendLine("        {");
             foreach (FieldDetails field in details.Fields)
             {
-                if (field.ModifiedFieldType == "string")
+                if (field.ModifiedFieldType == "string" && !field.FieldName.StartsWith("txt"))
                 {
                     sb.AppendLine($"            RuleFor(x => x.{field.ModifiedFieldName}).{field.NullText}().Length(0, {field.FieldLength});");
                 }

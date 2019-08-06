@@ -40,6 +40,7 @@ namespace OoklaTheMok.Models
             {
                 case "var":
                 case "chr":
+                case "txt":
                     ModifiedFieldType = "string";
                     break;
                 case "int":
