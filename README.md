@@ -58,3 +58,5 @@ Add to appropriate sections of Startup.cs:
 
         services.AddScoped<IPurposeService, PurposeService>();
 ```
+
+Fields that have no static length (varchar(max) or text) will not have field length validation added to them.
