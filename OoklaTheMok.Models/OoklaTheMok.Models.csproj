@@ -1,0 +1,1047 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24DE4868-CB7E-4A45-A596-D804E7DCC8FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OoklaTheMok.Models</RootNamespace>
+    <AssemblyName>OoklaTheMok.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FieldDetails.cs" />
+    <Compile Include="FrontlineModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrontlineModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrontlineModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrontlineModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FrontlineModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TableDetails.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tbl_ABuildings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ACategories.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AContent.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Activities.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ActivityEvents.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ActivityFormats.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ADepartments.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ADistricts.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AdminLog.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AdminLogType.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AdminRights.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AEvalMethods.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AExpenses.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AFollowUps.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AGrades.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AGroups.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AInstructors.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ALocations.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AMeetingDates.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AObjectives.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_APlans.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ApprovalStatus.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_APreRequisites.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_APromoCodes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_APurposes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ARegOptions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AStandards.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_AUsers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_BuildingGoals.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Buildings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CalAdmins.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CalBuildings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CalDepartments.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Calendars.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CalEntries.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CalGrades.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CalGroups.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CatalogOptions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Categories.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CBundles.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CCatalog.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CCourses.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CLicensesGroup.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CLicensesIndividual.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ColorCodes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Comments.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ConfPrefFeatures.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ConfRegActivities.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ConfRegistrations.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ConfSessionProposals.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ConfSPropMLPFeatures.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ConfSPropVotes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Content.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ContentStandards.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CourseCodes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CPromos.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CPublishers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_CSessions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DailyEmail.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DailyEMail_PRE.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Degrees.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DemoNames.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Departments.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DevelopmentRequests.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DistrictAbsenceConfig.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DistrictNews.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Districts.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DOEBuildings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DOEDistricts.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DProviders.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DRegionalProviders.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_DRenewalLog.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EmailAddressBook.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EmailCategories.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EmailOptions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EndangeredCustomers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EnrollmentStatus.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EvalMethods.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EventDates.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Events.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EventTimeSlotActivities.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_EventTimeSlots.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FailedLogins.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FDArticles.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FDFolders.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FDLogs.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FDMetaKeywords.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FDSolutions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FeatureFlags.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FileAttachments.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Files.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FileTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FollowUps.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FormElements.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FormPurposes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FormRules.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Forms.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FormTemplateData.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FormTemplates.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FTEStats.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FundingSources.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_FundingUsers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Goals.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Grades.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Groups.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_GroupUsers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Help.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_HelpImages.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Hosts.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_HostSections.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_HostSubSectionContent.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_HostSubSections.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_HowTo.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_HowToElements.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_HowToEval.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_HowToSteps.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_IPToDomain.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_KeywordMappings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_KeyWords.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LearningPlan.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ListPrefs.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Lists.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Locations.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LogDetail.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPApprovals.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPBank.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPBuildingGoals.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPBuildings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPCategories.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPCertificates.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPContent.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPDepartments.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPDistricts.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPEvalMethods.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPExpenses.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPFollowUps.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPFundings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPGrades.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPGroups.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPInstructors.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPLocations.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPLogs.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPMeetingDates.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPObjectives.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPPlans.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPPreRequisites.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPPromoCodes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPPurposes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPRegOptions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPSalarySteps.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPStandards.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPSubs.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_LPUsers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_MLPContacts.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_MLPFeatures.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Notification.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSAdHocReportActivity.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSAdHocReports.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSArchiveFormsRequest.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSArtifactGroups.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSArtifacts.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSCesaScoreExtractConfig.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSCesaScoreExtractCriteria.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSComponentForms.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSComponents.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSComponentTemplateForms.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSComponentTemplates.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSComponentUserRights.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSCompositeScoreCriteria.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSCompositeScoreRanges.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSCompositeScoreSections.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSConversionSheetRanges.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSConversionSheets.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSCriteriaStandardScores.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSCustomSections.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSDistrictSettings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSEmployeeClassifications.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSEvaluationApprovals.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSEvaluationRights.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSEvaluations.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSEvidenceCriteria.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSEvidences.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSForms.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSImportTemplates.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSImportTemplateSections.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSMaScoreExtractConfig.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSMaScoreExtractCriteria.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSNjScoreExtractConfig.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSNjScoreExtractCriteria.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSNyScoreExtractConfig.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSNyScoreExtractCriteria.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSNyScoreExtractHediRanges.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSNyScoreExtractRanges.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSRiScoreExtractConfig.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSRiScoreExtractFieldConfig.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSRiScoreExtractPanelConfig.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSRubricCriteria.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSRubricCriteriaStandards.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSRubricCrtieriaScores.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSRubricDescriptors.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSRubricLevels.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSRubrics.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSScratchPad.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSSections.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSSectionScores.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSSlos.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSTeamExportIndicator.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSTeamExportLogEntries.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSTripodAnswers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSTripodCategories.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSTripodCategoryRatings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSTripodGroups.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSTripodLevels.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSTripodQuestions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUnalignedEvidences.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserComponentExceptions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserComponentInstances.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserComponents.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserFormComments.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserFormEvents.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserForms.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserReports.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserRights.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserShortcutes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserViewAdmins.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OASYSUserViews.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Objectives.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_OtherFields.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PaymentFormats.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PDEReferenceStatus.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PDFXsl.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PermissionSyncSettings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PermissionUpdateEvents.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PermissionUpdateEventsQueue.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PlanObjectives.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Plans.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PositionTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PrefDefs.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Prefs.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ProgramAdmins.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Programs.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ProgramSubscribers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_PromoCodes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Providers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Purposes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegCourseGrades.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegCourseProviders.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegDCourseGrades.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegDEnrollmentTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegDPaymentTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegEnrollmentTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Regions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegPaymentTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegPEnrollmentTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegPPaymentTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegQuarterlyTransactions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegTransactions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_RegTransactionTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ReportFields.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Reports.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ReportTables.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ReportUsers.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Rights.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Roles.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SalarySteps.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SamlServiceProviderConfigs.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SecurityTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SessionsActive.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SessionsLog.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SIFAgents.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_StandardRecommendations.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Standards.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SupportActive.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SupportArchive.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SupportNotes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Surveys.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_TeachingStandards.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_TeamFiles.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_TeamForms.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_TeamFormSubmissions.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_TeamThreads.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_TeamTopics.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UBuildings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UCertifications.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UDegrees.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UDepartments.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UGrades.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UMentors.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UPositionTypes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UResumes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_USalarySteps.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UserAuth.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UsernameLocks.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UserPasswordReset.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UserPersonAssociations.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UserProfile.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UserUpdateEvents.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UserUpdateEventsQueue.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_UserViews.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_USignatures.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WAComments.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WAFiles.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WAURLs.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Webinars.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WebRegDistrictSettings.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WebregLogos.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_WorkAreas.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_ZipCodes.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Temptbl_OASYSArtifacts.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Temptbl_OASYSSections_FPS1235.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Temptbl_OASYSSections_FPS1235_09082017.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Temptbl_OASYSSections_FPS1235_1.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Temptbl_OASYSSections_FPS1235_part2.cs">
+      <DependentUpon>FrontlineModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="FrontlineModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>FrontlineModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="FrontlineModel.edmx.diagram">
+      <DependentUpon>FrontlineModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FrontlineModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>FrontlineModel.Context.cs</LastGenOutput>
+      <DependentUpon>FrontlineModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="FrontlineModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>FrontlineModel.edmx</DependentUpon>
+      <LastGenOutput>FrontlineModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

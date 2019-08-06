@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c3d08dbf9652469a91476e32f121883c" Name="Diagram1">
+        <EntityTypeShape EntityType="MLPModel.sysdiagram" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ABuildings" Width="1.5" PointX="11.25" PointY="362.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ACategories" Width="1.5" PointX="8.25" PointY="370.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AContent" Width="1.5" PointX="8.25" PointY="373.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Activities" Width="1.5" PointX="6" PointY="380.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ActivityEvents" Width="1.5" PointX="8.25" PointY="375.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ActivityFormats" Width="1.5" PointX="3" PointY="283.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ADepartments" Width="1.5" PointX="20.25" PointY="390" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ADistricts" Width="1.5" PointX="8.25" PointY="367.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AdminLog" Width="1.5" PointX="8.25" PointY="362.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AdminLogType" Width="1.5" PointX="12.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AdminRights" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AEvalMethods" Width="1.5" PointX="8.25" PointY="407.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AExpenses" Width="1.5" PointX="8.25" PointY="417.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AFollowUps" Width="1.5" PointX="8.25" PointY="421.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AGrades" Width="1.5" PointX="14.25" PointY="401.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AGroups" Width="1.5" PointX="8.25" PointY="431.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AInstructors" Width="1.5" PointX="16.5" PointY="445.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ALocations" Width="1.5" PointX="8.25" PointY="434.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AMeetingDates" Width="1.5" PointX="8.25" PointY="436.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AObjectives" Width="1.5" PointX="11.25" PointY="402.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_APlans" Width="1.5" PointX="8.25" PointY="442.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ApprovalStatus" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_APreRequisites" Width="1.5" PointX="8.25" PointY="445" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_APromoCodes" Width="1.5" PointX="8.25" PointY="447.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_APurposes" Width="1.5" PointX="8.25" PointY="471" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ARegOptions" Width="1.5" PointX="20.25" PointY="392.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AStandards" Width="1.5" PointX="20.25" PointY="384" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_AUsers" Width="1.5" PointX="8.25" PointY="450.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_BuildingGoals" Width="1.5" PointX="5.25" PointY="335" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Buildings" Width="1.5" PointX="3" PointY="332.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CalAdmins" Width="1.5" PointX="13.5" PointY="487.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CalBuildings" Width="1.5" PointX="5.25" PointY="332.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CalDepartments" Width="1.5" PointX="17.25" PointY="385" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Calendars" Width="1.5" PointX="3" PointY="327.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CalEntries" Width="1.5" PointX="16.5" PointY="483.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CalGrades" Width="1.5" PointX="5.25" PointY="410" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CalGroups" Width="1.5" PointX="8.25" PointY="413.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CatalogOptions" Width="1.5" PointX="3" PointY="340.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Categories" Width="1.5" PointX="3" PointY="346.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CBundles" Width="1.5" PointX="21" PointY="407.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CCatalog" Width="1.5" PointX="6.75" PointY="319.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CCourses" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CLicensesGroup" Width="1.5" PointX="9" PointY="388.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CLicensesIndividual" Width="1.5" PointX="9" PointY="321.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ColorCodes" Width="1.5" PointX="2.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Comments" Width="1.5" PointX="13.5" PointY="418.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ConfPrefFeatures" Width="1.5" PointX="13.5" PointY="422.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ConfRegActivities" Width="1.5" PointX="4.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ConfRegistrations" Width="1.5" PointX="13.5" PointY="428.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ConfSessionProposals" Width="1.5" PointX="13.5" PointY="432.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ConfSPropMLPFeatures" Width="1.5" PointX="6.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ConfSPropVotes" Width="1.5" PointX="13.5" PointY="437.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Content" Width="1.5" PointX="21" PointY="372" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ContentStandards" Width="1.5" PointX="23.25" PointY="374.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CourseCodes" Width="1.5" PointX="3" PointY="353.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CPromos" Width="1.5" PointX="8.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CPublishers" Width="1.5" PointX="4.5" PointY="321.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_CSessions" Width="1.5" PointX="23.25" PointY="388.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DailyEmail" Width="1.5" PointX="13.5" PointY="440" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DailyEMail_PRE" Width="1.5" PointX="13.5" PointY="443.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Degrees" Width="1.5" PointX="14.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DemoNames" Width="1.5" PointX="14.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Departments" Width="1.5" PointX="9" PointY="382.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DevelopmentRequests" Width="1.5" PointX="13.5" PointY="446" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DistrictAbsenceConfig" Width="1.5" PointX="3" PointY="363.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DistrictNews" Width="1.5" PointX="3" PointY="367.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Districts" Width="1.5" PointX="0.75" PointY="370.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DOEBuildings" Width="1.5" PointX="14.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DOEDistricts" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DProviders" Width="1.5" PointX="9" PointY="393" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DRegionalProviders" Width="1.5" PointX="9" PointY="396.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_DRenewalLog" Width="1.5" PointX="3" PointY="378.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_EmailAddressBook" Width="1.5" PointX="14" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_EmailCategories" Width="1.5" PointX="11.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_EmailOptions" Width="1.5" PointX="13.5" PointY="450.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_EndangeredCustomers" Width="1.5" PointX="3" PointY="381.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_EnrollmentStatus" Width="1.5" PointX="12.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_EvalMethods" Width="1.5" PointX="3" PointY="384.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_EventDates" Width="1.5" PointX="14.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Events" Width="1.5" PointX="3" PointY="388" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_EventTimeSlotActivities" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_EventTimeSlots" Width="1.5" PointX="2.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FailedLogins" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FDArticles" Width="1.5" PointX="7.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FDFolders" Width="1.5" PointX="5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FDLogs" Width="1.5" PointX="4.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FDMetaKeywords" Width="1.5" PointX="9.5" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FDSolutions" Width="1.5" PointX="2.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FeatureFlags" Width="1.5" PointX="3" PointY="392.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FileAttachments" Width="1.5" PointX="16.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Files" Width="1.5" PointX="20.25" PointY="379" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FileTypes" Width="1.5" PointX="18" PointY="374.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FollowUps" Width="1.5" PointX="3" PointY="395.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FormElements" Width="1.5" PointX="15" PointY="348.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FormPurposes" Width="1.5" PointX="6.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FormRules" Width="1.5" PointX="15" PointY="354.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Forms" Width="1.5" PointX="12.75" PointY="348.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FormTemplateData" Width="1.5" PointX="17.25" PointY="358.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FormTemplates" Width="1.5" PointX="15" PointY="358.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FTEStats" Width="1.5" PointX="16.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FundingSources" Width="1.5" PointX="3" PointY="398.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_FundingUsers" Width="1.5" PointX="8.25" PointY="401.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Goals" Width="1.5" PointX="3" PointY="404.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Grades" Width="1.5" PointX="3" PointY="409.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Groups" Width="1.5" PointX="3" PointY="413.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_GroupUsers" Width="1.5" PointX="5.25" PointY="416.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Help" Width="1.5" PointX="16.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_HelpImages" Width="1.5" PointX="16.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Hosts" Width="1.5" PointX="3" PointY="417.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_HostSections" Width="1.5" PointX="7.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_HostSubSectionContent" Width="1.5" PointX="18.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_HostSubSections" Width="1.5" PointX="10" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_HowTo" Width="1.5" PointX="18.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_HowToElements" Width="1.5" PointX="18.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_HowToEval" Width="1.5" PointX="18.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_HowToSteps" Width="1.5" PointX="18.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_IPToDomain" Width="1.5" PointX="0.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_KeywordMappings" Width="1.5" PointX="2.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_KeyWords" Width="1.5" PointX="4.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LearningPlan" Width="1.5" PointX="15" PointY="379.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ListPrefs" Width="1.5" PointX="13.5" PointY="455.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Lists" Width="1.5" PointX="6.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Locations" Width="1.5" PointX="3" PointY="419.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LogDetail" Width="1.5" PointX="12" PointY="388.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPApprovals" Width="1.5" PointX="19.25" PointY="441.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPBank" Width="1.5" PointX="5.25" PointY="421.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPBuildingGoals" Width="1.5" PointX="7.5" PointY="335.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPBuildings" Width="1.5" PointX="5.25" PointY="338.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPCategories" Width="1.5" PointX="17.25" PointY="379.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPCertificates" Width="1.5" PointX="17.25" PointY="381.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPContent" Width="1.5" PointX="23.25" PointY="384.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPDepartments" Width="1.5" PointX="20.25" PointY="387" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPDistricts" Width="1.5" PointX="17.25" PointY="388.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPEvalMethods" Width="1.5" PointX="8.25" PointY="379.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPExpenses" Width="1.5" PointX="17.25" PointY="390.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPFollowUps" Width="1.5" PointX="5.25" PointY="399.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPFundings" Width="1.5" PointX="11.25" PointY="399.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPGrades" Width="1.5" PointX="17.25" PointY="398.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPGroups" Width="1.5" PointX="8.25" PointY="410.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPInstructors" Width="1.5" PointX="17.25" PointY="400.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPLocations" Width="1.5" PointX="20.25" PointY="403.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPLogs" Width="1.5" PointX="17.25" PointY="406.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPMeetingDates" Width="1.5" PointX="20.25" PointY="397" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPObjectives" Width="1.5" PointX="7.5" PointY="404.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPPlans" Width="1.5" PointX="17.25" PointY="415.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPPreRequisites" Width="1.5" PointX="17.25" PointY="417.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPPromoCodes" Width="1.5" PointX="17.25" PointY="420.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPPurposes" Width="1.5" PointX="17.25" PointY="470.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPRegOptions" Width="1.5" PointX="17.25" PointY="426.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPSalarySteps" Width="1.5" PointX="17.25" PointY="494.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPStandards" Width="1.5" PointX="23.25" PointY="393" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPSubs" Width="1.5" PointX="17.25" PointY="436" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_LPUsers" Width="1.5" PointX="17.25" PointY="439" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_MLPContacts" Width="1.5" PointX="12.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_MLPFeatures" Width="1.5" PointX="14.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Notification" Width="1.5" PointX="16.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSAdHocReportActivity" Width="1.5" PointX="13.5" PointY="460" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSAdHocReports" Width="1.5" PointX="3" PointY="468.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSArchiveFormsRequest" Width="1.5" PointX="12" PointY="383.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSArtifactGroups" Width="1.5" PointX="3" PointY="475.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSArtifacts" Width="1.5" PointX="5.25" PointY="473.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSCesaScoreExtractConfig" Width="1.5" PointX="3" PointY="478.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSCesaScoreExtractCriteria" Width="1.5" PointX="5.25" PointY="478.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSComponentForms" Width="1.5" PointX="15.75" PointY="456.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSComponents" Width="1.5" PointX="13.5" PointY="405.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSComponentTemplateForms" Width="1.5" PointX="5.25" PointY="498.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSComponentTemplates" Width="1.5" PointX="3" PointY="482" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSComponentUserRights" Width="1.5" PointX="15.75" PointY="453.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSCompositeScoreCriteria" Width="1.5" PointX="20.5" PointY="367.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSCompositeScoreRanges" Width="1.5" PointX="16.5" PointY="365.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSCompositeScoreSections" Width="1.5" PointX="14.25" PointY="365.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSConversionSheetRanges" Width="1.5" PointX="5.25" PointY="485.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSConversionSheets" Width="1.5" PointX="3" PointY="485.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSCriteriaStandardScores" Width="1.5" PointX="18.75" PointY="489.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSCustomSections" Width="1.5" PointX="3" PointY="488.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSDistrictSettings" Width="1.5" PointX="12" PointY="392.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSEmployeeClassifications" Width="1.5" PointX="6" PointY="427.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSEvaluationApprovals" Width="1.5" PointX="16.5" PointY="460.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSEvaluationRights" Width="1.5" PointX="13.5" PointY="462.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSEvaluations" Width="1.5" PointX="14.25" PointY="520.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSEvidenceCriteria" Width="1.5" PointX="21.75" PointY="492.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSEvidences" Width="1.5" PointX="24" PointY="484.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSForms" Width="1.5" PointX="3" PointY="504.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSImportTemplates" Width="1.5" PointX="12" PointY="379.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSImportTemplateSections" Width="1.5" PointX="14.25" PointY="376" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSMaScoreExtractConfig" Width="1.5" PointX="3" PointY="501.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSMaScoreExtractCriteria" Width="1.5" PointX="5.25" PointY="501.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSNjScoreExtractConfig" Width="1.5" PointX="2.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSNjScoreExtractCriteria" Width="1.5" PointX="5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSNyScoreExtractConfig" Width="1.5" PointX="3" PointY="517.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSNyScoreExtractCriteria" Width="1.5" PointX="10.5" PointY="434.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSNyScoreExtractHediRanges" Width="1.5" PointX="3" PointY="520.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSNyScoreExtractRanges" Width="1.5" PointX="5.25" PointY="517.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSRiScoreExtractConfig" Width="1.5" PointX="3" PointY="523.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSRiScoreExtractFieldConfig" Width="1.5" PointX="7.5" PointY="523.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSRiScoreExtractPanelConfig" Width="1.5" PointX="5.25" PointY="523.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSRubricCriteria" Width="1.5" PointX="16.5" PointY="500.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSRubricCriteriaStandards" Width="1.5" PointX="18.75" PointY="501.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSRubricCrtieriaScores" Width="1.5" PointX="21.75" PointY="487.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSRubricDescriptors" Width="1.5" PointX="18.75" PointY="514.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSRubricLevels" Width="1.5" PointX="5.25" PointY="528.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSRubrics" Width="1.5" PointX="3" PointY="527.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSScratchPad" Width="1.5" PointX="13.5" PointY="465.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSSections" Width="1.5" PointX="12" PointY="370.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSSectionScores" Width="1.5" PointX="5.25" PointY="509" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSSlos" Width="1.5" PointX="8.25" PointY="496.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSTeamExportLogEntries" Width="1.5" PointX="6" PointY="376.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSTripodAnswers" Width="1.5" PointX="16.5" PointY="479.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSTripodCategories" Width="1.5" PointX="5.25" PointY="454.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSTripodCategoryRatings" Width="1.5" PointX="16.5" PointY="475.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSTripodGroups" Width="1.5" PointX="3" PointY="540" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSTripodLevels" Width="1.5" PointX="3" PointY="543" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSTripodQuestions" Width="1.5" PointX="7.5" PointY="492.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSTypes" Width="1.5" PointX="8.25" PointY="425.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUnalignedEvidences" Width="1.5" PointX="8.25" PointY="509.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserComponentExceptions" Width="1.5" PointX="18.75" PointY="451.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserComponentInstances" Width="1.5" PointX="13.5" PointY="468.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserComponents" Width="1.5" PointX="18.75" PointY="454.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserFormComments" Width="1.5" PointX="8.25" PointY="504" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserFormEvents" Width="1.5" PointX="5.25" PointY="505.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserForms" Width="1.5" PointX="11.25" PointY="506.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserReports" Width="1.5" PointX="13.5" PointY="471.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserRights" Width="1.5" PointX="13.5" PointY="475" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserShortcutes" Width="1.5" PointX="13.5" PointY="477.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserViewAdmins" Width="1.5" PointX="18.75" PointY="484.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSUserViews" Width="1.5" PointX="13.5" PointY="483" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Objectives" Width="1.5" PointX="5.25" PointY="402.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OtherFields" Width="1.5" PointX="18.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PaymentFormats" Width="1.5" PointX="3" PointY="545.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PDEReferenceStatus" Width="1.5" PointX="20.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PDFXsl" Width="1.5" PointX="20.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PermissionSyncSettings" Width="1.5" PointX="20.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PermissionUpdateEvents" Width="1.5" PointX="5.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PermissionUpdateEventsQueue" Width="1.5" PointX="8" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PlanObjectives" Width="1.5" PointX="27.75" PointY="394.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Plans" Width="1.5" PointX="25.5" PointY="382.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PositionTypes" Width="1.5" PointX="3" PointY="548.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PrefDefs" Width="1.5" PointX="20.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Prefs" Width="1.5" PointX="16.5" PointY="431.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ProgramAdmins" Width="1.5" PointX="13.5" PointY="490.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Programs" Width="1.5" PointX="3" PointY="570.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ProgramSubscribers" Width="1.5" PointX="3" PointY="552.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_PromoCodes" Width="1.5" PointX="3" PointY="555.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Providers" Width="1.5" PointX="6.75" PointY="352.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Purposes" Width="1.5" PointX="3" PointY="559.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegCourseGrades" Width="1.5" PointX="20.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegCourseProviders" Width="1.5" PointX="3" PointY="564.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegDCourseGrades" Width="1.5" PointX="3" PointY="567.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegDEnrollmentTypes" Width="1.5" PointX="3" PointY="594.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegDPaymentTypes" Width="1.5" PointX="3" PointY="597.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegEnrollmentTypes" Width="1.5" PointX="18" PointY="409.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Regions" Width="1.5" PointX="3" PointY="599.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegPaymentTypes" Width="1.5" PointX="3" PointY="533" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegPEnrollmentTypes" Width="1.5" PointX="5.25" PointY="581" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegPPaymentTypes" Width="1.5" PointX="5.25" PointY="578" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegQuarterlyTransactions" Width="1.5" PointX="13.5" PointY="503.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegTransactions" Width="1.5" PointX="13.5" PointY="493.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_RegTransactionTypes" Width="1.5" PointX="3" PointY="602.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ReportFields" Width="1.5" PointX="20.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Reports" Width="1.5" PointX="19.5" PointY="431.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ReportTables" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ReportUsers" Width="1.5" PointX="13.5" PointY="518" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Rights" Width="1.5" PointX="13.5" PointY="529.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Roles" Width="1.5" PointX="3" PointY="606" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_SalarySteps" Width="1.5" PointX="3" PointY="609.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_SecurityTypes" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_SessionsActive" Width="1.5" PointX="22.5" PointY="429.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_SessionsLog" Width="1.5" PointX="13.5" PointY="533" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_SIFAgents" Width="1.5" PointX="2.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_StandardRecommendations" Width="1.5" PointX="16.5" PointY="488.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Standards" Width="1.5" PointX="18" PointY="369.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_SupportActive" Width="1.5" PointX="19.5" PointY="427" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_SupportArchive" Width="1.5" PointX="19.5" PointY="446" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_SupportNotes" Width="1.5" PointX="22.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Surveys" Width="1.5" PointX="25.5" PointY="431.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_TeachingStandards" Width="1.5" PointX="3" PointY="613" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_TeamFiles" Width="1.5" PointX="4.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_TeamForms" Width="1.5" PointX="6.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_TeamFormSubmissions" Width="1.5" PointX="8.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_TeamThreads" Width="1.5" PointX="13.5" PointY="581.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_TeamTopics" Width="1.5" PointX="13.5" PointY="584.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UBuildings" Width="1.5" PointX="8.25" PointY="332.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UCertifications" Width="1.5" PointX="13.5" PointY="587.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UDegrees" Width="1.5" PointX="13.5" PointY="591.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UDepartments" Width="1.5" PointX="16.5" PointY="442" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UGrades" Width="1.5" PointX="5.25" PointY="413" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UMentors" Width="1.5" PointX="13.5" PointY="594.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UPositionTypes" Width="1.5" PointX="13.5" PointY="597.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UResumes" Width="1.5" PointX="28.5" PointY="431.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_USalarySteps" Width="1.5" PointX="13.5" PointY="537.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UserAuth" Width="1.5" PointX="13.5" PointY="604.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UsernameLocks" Width="1.5" PointX="22.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UserPasswordReset" Width="1.5" PointX="13.5" PointY="607.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UserPersonAssociations" Width="1.5" PointX="13.5" PointY="610" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UserProfile" Width="1.5" PointX="11.25" PointY="466" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UserUpdateEvents" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UserUpdateEventsQueue" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_UserViews" Width="1.5" PointX="13.5" PointY="612.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_USignatures" Width="1.5" PointX="13.5" PointY="617" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_WAComments" Width="1.5" PointX="13.5" PointY="619.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_WAFiles" Width="1.5" PointX="13.5" PointY="622.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_WAURLs" Width="1.5" PointX="13.5" PointY="625.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_Webinars" Width="1.5" PointX="13.5" PointY="627.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_WebRegDistrictSettings" Width="1.5" PointX="3" PointY="616.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_WebregLogos" Width="1.5" PointX="22.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_WorkAreas" Width="1.5" PointX="3" PointY="619.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_ZipCodes" Width="1.5" PointX="14.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_OASYSTeamExportIndicator" Width="1.5" PointX="22.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.tbl_SamlServiceProviderConfigs" Width="1.5" PointX="22.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.Temptbl_OASYSArtifacts" Width="1.5" PointX="22.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.Temptbl_OASYSSections_FPS1235" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.Temptbl_OASYSSections_FPS1235_09082017" Width="1.5" PointX="24.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.Temptbl_OASYSSections_FPS1235_1" Width="1.5" PointX="24.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MLPModel.Temptbl_OASYSSections_FPS1235_part2" Width="1.5" PointX="24.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ABuildings_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ABuildings_tbl_Buildings" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ACategories_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AContent_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Activities_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Activities_tbl_Forms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ActivityEvents_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ADepartments_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ADistricts_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AdminLog_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AEvalMethods_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AExpenses_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AFollowUps_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AGrades_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AGroups_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AInstructors_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ALocations_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AMeetingDates_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AObjectives_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_APlans_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_APreRequisites_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_APromoCodes_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_APurposes_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ARegOptions_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AStandards_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AUsers_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Files_tbl_Activities" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ActivityFormats_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPBank_tbl_ActivityFormats" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ADepartments_tbl_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AGrades_tbl_Grades" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AInstructors_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AObjectives_tbl_Objectives" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_APurposes_tbl_Purposes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ARegOptions_tbl_RegEnrollmentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_AStandards_tbl_Standards" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_BuildingGoals_tbl_Buildings" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPBuildingGoals_tbl_BuildingGoals" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Buildings_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalBuildings_tbl_Buildings" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPBuildings_tbl_Buildings" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UBuildings_tbl_Buildings" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalAdmins_tbl_Calendars" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalAdmins_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalBuildings_tbl_Calendars" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalDepartments_tbl_Calendars" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalDepartments_tbl_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalEntries_tbl_Calendars" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalGrades_tbl_Calendars" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalGroups_tbl_Calendars" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalEntries_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalGrades_tbl_Grades" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CalGroups_tbl_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_CatalogOptions_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Categories_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPBank_tbl_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CBundles_tbl_CCatalog" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CSessions_tbl_CBundles" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CCatalog_tbl_CPublishers" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CLicensesGroup_tbl_CCatalog" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CLicensesIndividual_tbl_CCatalog" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CLicensesGroup_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Comments_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ConfPrefFeatures_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ConfRegistrations_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ConfSessionProposals_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ConfSPropVotes_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ContentStandards_tbl_Content" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPContent_tbl_Content" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CourseCodes_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_CSessions_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DailyEmail_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DailyEMail_PRE_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Departments_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Departments_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPDepartments_tbl_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UDepartments_tbl_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DevelopmentRequests_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DistrictAbsenceConfig_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DistrictNews_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DProviders_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DRegionalProviders_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DRenewalLog_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_EndangeredCustomers_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_EvalMethods_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Events_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FeatureFlags_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Files_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FollowUps_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FundingSources_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Goals_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Grades_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Groups_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Hosts_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LearningPlan_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Locations_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LogDetail_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSArchiveFormsRequest_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSArtifactGroups_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCesaScoreExtractConfig_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSComponents_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSComponentTemplates_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSConversionSheets_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCustomSections_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSDistrictSettings_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSForms_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSImportTemplates_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSMaScoreExtractConfig_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSNyScoreExtractConfig_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSNyScoreExtractHediRanges_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRiScoreExtractConfig_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubrics_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTeamExportLogEntries_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodCategories_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodGroups_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodLevels_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTypes_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_PaymentFormats_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Plans_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_PositionTypes_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Prefs_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Programs_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ProgramSubscribers_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_PromoCodes_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Purposes_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegCourseProviders_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegDCourseGrades_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegDEnrollmentTypes_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegDPaymentTypes_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Regions_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegTransactionTypes_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Reports_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Roles_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_SalarySteps_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_SessionsActive_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_SupportActive_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_SupportArchive_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Surveys_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_TeachingStandards_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UserProfile_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_WebRegDistrictSettings_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_WorkAreas_tbl_Districts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DProviders_tbl_Providers" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_DRegionalProviders_tbl_Providers" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_EmailAddressBook_tbl_EmailCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_EmailOptions_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPBank_tbl_EvalMethods" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPEvalMethods_tbl_EvalMethods" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FDArticles_tbl_FDFolders" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FDArticles_tbl_FDMetaKeywords" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FDFolders_tbl_FDSolutions" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Files_tbl_FileTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Plans_tbl_Files" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UResumes_tbl_Files" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPFollowUps_tbl_FollowUps" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FormElements_tbl_Forms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FormRules_tbl_Forms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FormTemplates_tbl_Forms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LearningPlan_tbl_Forms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FormTemplateData_tbl_Forms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FundingUsers_tbl_FundingSources" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPFundings_tbl_FundingSources" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_FundingUsers_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Objectives_tbl_Goals" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UGrades_tbl_Grades" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_GroupUsers_tbl_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPGroups_tbl_Groups" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_HostSubSections_tbl_HostSections" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LearningPlan_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPApprovals_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPBank_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPBuildingGoals_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPBuildings_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPCategories_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPCertificates_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPContent_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPDepartments_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPDistricts_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPEvalMethods_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPExpenses_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPFollowUps_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPFundings_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPGrades_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPGroups_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPInstructors_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPLocations_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPLogs_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPMeetingDates_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPObjectives_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPPlans_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPPreRequisites_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPPromoCodes_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPPurposes_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPRegOptions_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPSalarySteps_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPStandards_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPSubs_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPUsers_tbl_LearningPlan" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ListPrefs_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPLocations_tbl_Locations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPMeetingDates_tbl_Locations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LogDetail_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPApprovals_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPBank_tbl_Purposes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPObjectives_tbl_Objectives" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPPurposes_tbl_Purposes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPSalarySteps_tbl_SalarySteps" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_LPStandards_tbl_Standards" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSAdHocReportActivity_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSArchiveFormsRequest_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSArtifacts_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCesaScoreExtractCriteria_tbl_OASYSMaScoreExtractConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSComponentForms_tbl_OASYSComponents" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSComponentForms_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSComponents_tbl_OASYSTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSComponentUserRights_tbl_OASYSComponents" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserComponentExceptions_tbl_OASYSComponents" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserComponents_tbl_OASYSComponents" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSComponentTemplateForms_tbl_OASYSComponentTemplates" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSComponentTemplateForms_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSComponentUserRights_tbl_UserProfile1" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCompositeScoreCriteria_tbl_OASYSCompositeScoreSections" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCompositeScoreCriteria_tbl_OASYSSections" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCompositeScoreRanges_tbl_OASYSCompositeScoreSections" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCompositeScoreSections_tbl_OASYSSections" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSConversionSheetRanges_tbl_OASYSConversionSheets" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSSlos_tbl_OASYSConversionSheets" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCriteriaStandardScores_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCriteriaStandardScores_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCriteriaStandardScores_tbl_OASYSRubricCriteria" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCriteriaStandardScores_tbl_OASYSSections" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCriteriaStandardScores_tbl_Standards" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSCriteriaStandardScores_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSDistrictSettings_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTypes_tbl_OASYSEmployeeClassifications" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvaluationApprovals_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvaluationApprovals_tbl_OASYSTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvaluationApprovals_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvaluationApprovals_tbl_UserProfile2" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvaluationRights_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvaluationRights_tbl_UserProfile1" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvidenceCriteria_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSFormComments_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricCrtieriaScores_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSSectionScores_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSSlos_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUnalignedEvidences_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserFormEvents_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserForms_tbl_OASYSEvaluations" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvidenceCriteria_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvidenceCriteria_tbl_OASYSRubricCriteria" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvidenceCriteria_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvidenceCriteria_tbl_UserProfile_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvidences_tbl_OASYSEvidenceCriteria" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvidences_tbl_UserProfile_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSEvidences_tbl_UserProfile_SyncAdmin" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSFormComments_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricCrtieriaScores_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSSectionScores_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSSlos_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUnalignedEvidences_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserFormEvents_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserForms_tbl_OASYSForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSImportTemplates_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSImportTemplateSections_tbl_OASYSImportTemplates" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSImportTemplateSections_tbl_OASYSSections" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSMaScoreExtractCriteria_tbl_OASYSMaScoreExtractConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSNjScoreExtractCriteria_tbl_OASYSNjScoreExtractConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSNyScoreExtractRanges_tbl_OASYSNyScoreExtractConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSNyScoreExtractCriteria_tbl_OASYSNyScoreExtractCriteria" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSNyScoreExtractCriteria_tbl_OASYSTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRiScoreExtractPanelConfig_tbl_OASYSRiScoreExtractConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRiScoreExtractFieldConfig_tbl_OASYSRiScoreExtractPanelConfig" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricCriteria_tbl_OASYSRubrics" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricCriteriaStandards_tbl_OASYSRubricCriteria" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricCrtieriaScores_tbl_OASYSRubricCriteria" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricDescriptors_tbl_OASYSRubricCriteria" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricCriteriaStandards_tbl_Standards" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricCrtieriaScores_tbl_OASYSSections" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricCrtieriaScores_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricDescriptors_tbl_OASYSRubricLevels" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSRubricLevels_tbl_OASYSRubrics" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSScratchPad_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSSectionScores_tbl_OASYSSections" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSSectionScores_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSSlos_tbl_OASYSUserForms" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSSlos_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTeamExportLogEntries_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodAnswers_tbl_OASYSTripodQuestions" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodAnswers_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodCategories_tbl_OASYSTripodGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodCategoryRatings_tbl_OASYSTripodCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodQuestions_tbl_OASYSTripodCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodCategoryRatings_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSTripodQuestions_tbl_OASYSTripodLevels" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUnalignedEvidences_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUnalignedEvidences_tbl_UserProfile_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserComponentExceptions_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserComponentInstances_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserComponents_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserComponents_tbl_UserProfile1" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSFormComments_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserFormEvents_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserForms_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserReports_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserRights_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserShortcutes_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserViewAdmins_tbl_OASYSUserViews" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserViewAdmins_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_OASYSUserViews_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_PlanObjectives_tbl_Objectives" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_PermissionUpdateEventsQueue_tbl_PermissionUpdateEvents" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_PlanObjectives_tbl_Plans" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UserProfile_tbl_PositionTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Prefs_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ProgramAdmins_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegPEnrollmentTypes_tbl_Programs" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegPPaymentTypes_tbl_Programs" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegPEnrollmentTypes_tbl_RegEnrollmentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegPPaymentTypes_tbl_RegPaymentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegQuarterlyTransactions_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_RegTransactions_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Reports_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_ReportUsers_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Rights_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UserProfile_tbl_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_USalarySteps_tbl_SalarySteps" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_SecurityTypes_tbl_SecurityTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_SessionsActive_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_SessionsLog_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_StandardRecommendations_tbl_Standards" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_StandardRecommendations_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_StandardRecommendations_tbl_UserProfile1" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_StandardRecommendations_tbl_UserProfile2" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_SupportActive_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_SupportArchive_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Surveys_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_TeamThreads_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_TeamTopics_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UBuildings_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UCertifications_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UDegrees_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UDepartments_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UGrades_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UMentors_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UMentors_tbl_UserProfile1" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UPositionTypes_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UResumes_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_USalarySteps_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UserAuth_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UserPasswordReset_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UserPersonAssociations_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UserViews_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_USignatures_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_WAComments_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_WAFiles_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_WAURLs_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_Webinars_tbl_UserProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.FK_tbl_UserUpdateEventsQueue_tbl_UserUpdateEvents" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.tbl_OASYSAdHocReportDistricts" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.tbl_OASYSArtifactArtifactGroups" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.tbl_OASYSArtifactCriteria" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.tbl_OASYSArtifactGroupEvalTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="MLPModel.tbl_RegionDistricts" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
