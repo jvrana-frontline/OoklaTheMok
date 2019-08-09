@@ -169,7 +169,7 @@ namespace OoklaTheMok
             sb.AppendLine("        {");
             foreach (FieldDetails field in details.Fields)
             {
-                if (field.ModifiedFieldType == "string" && !field.FieldName.StartsWith("txt")  && field.FieldLengthMax == false)
+                if (field.ModifiedFieldType == "string" && !field.FieldName.StartsWith("txt") && field.FieldLengthMax == false)
                 {
                     sb.AppendLine($"            RuleFor(x => x.{field.ModifiedFieldName}).{field.NullText}().Length(0, {field.FieldLength});");
                 }
@@ -349,13 +349,20 @@ namespace OoklaTheMok
             sb.Append(Environment.NewLine);
             sb.AppendLine("        [HttpGet]");
             sb.AppendLine($@"        [ProducesResponseType(typeof(List<{details.ClassName}Model>), (int)HttpStatusCode.OK)]");
+            sb.AppendLine(@"        [ProducesResponseType(typeof(BadRequestObjectResult), (int)HttpStatusCode.BadRequest)]");
             sb.AppendLine($@"        async public Task<ActionResult<{details.ClassName}Model>> Get{details.ClassName}s(int orgId)");
             sb.AppendLine("        {");
             sb.AppendLine("            var district = await _districtService.GetById(orgId, true);");
+            sb.AppendLine($"            if (district == null)");
+            sb.AppendLine("            {");
+            sb.AppendLine($@"                return BadRequest(""invalid orgId."");");
+            sb.AppendLine("            }");
+            sb.AppendLine("            else");
+            sb.AppendLine("            {");
             sb.AppendLine($"            var {details.ClassName.ToLower()}s = await _{details.ClassName.ToLower()}Service.GetByDistrictIdAsync(district.Id);");
             sb.AppendLine($"            return Ok({details.ClassName.ToLower()}s.Select(d => _mapper.Map<{details.ClassName}Model>(d)).ToList());");
+            sb.AppendLine("            }");
             sb.AppendLine("        }");
-
             sb.AppendLine("    }");
             sb.AppendLine("}");
 
@@ -482,13 +489,42 @@ namespace OoklaTheMok
             sb.Append(Environment.NewLine);
             sb.AppendLine("            _mockService.Setup(m => m.GetByDistrictIdAsync(It.IsAny<int>())).ReturnsAsync(entities);");
             sb.Append(Environment.NewLine);
-            sb.Append(Environment.NewLine);
             sb.AppendLine("            // Act");
             sb.AppendLine($"            var response = await _controller.Get{details.ClassName}s(orgId);");
             sb.Append(Environment.NewLine);
             sb.AppendLine("            // Assert");
             sb.AppendLine("            response.Result.Should().BeOfType<OkObjectResult>()");
             sb.AppendLine($"                .Which.Value.Should().BeOfType<List<{details.ClassName}Model>>();");
+            sb.AppendLine("        }");
+            sb.AppendLine("        [Fact]");
+            sb.AppendLine("        public async Task Get_WithInvalidDistrictId_ReturnsBadRequest()");
+            sb.AppendLine("        {");
+            sb.AppendLine("            // Arrange");
+            sb.AppendLine("            var orgId = 999999;");
+            sb.AppendLine("            var districtId = 999999;");
+            sb.AppendLine($"            var entities = new List<{details.ClassName}>()");
+            sb.AppendLine("            {");
+            sb.AppendLine($"                new {details.ClassName}()");
+            sb.AppendLine("                {");
+            sb.AppendLine("                    Id = 1,");
+            sb.AppendLine("                    Active = true");
+            sb.AppendLine("                }");
+            sb.AppendLine("            };");
+            sb.AppendLine("            var user = new User() { IsSysAdmin = true };");
+            sb.AppendLine("            District district = null;");
+            sb.Append(Environment.NewLine);
+            sb.AppendLine("            _mockUserIdentity.SetupGet(m => m.OrgIds).Returns(new[] { orgId });");
+            sb.AppendLine("            _mockUserService.Setup(m => m.GetByIdAndOrgAsync(It.IsAny<IEnumerable<int>>(), It.IsAny<int>())).ReturnsAsync(user);");
+            sb.AppendLine("            _mockDistrictService.Setup(m => m.GetById(It.IsAny<int>(), It.IsAny<bool>())).ReturnsAsync(district);");
+            sb.Append(Environment.NewLine);
+            sb.AppendLine("            _mockService.Setup(m => m.GetByDistrictIdAsync(It.IsAny<int>(), true)).ReturnsAsync(entities);");
+            sb.Append(Environment.NewLine);
+            sb.AppendLine("            // Act");
+            sb.AppendLine($"            var response = await _controller.Get{details.ClassName}s(orgId);");
+            sb.Append(Environment.NewLine);
+            sb.AppendLine("            // Assert");
+            sb.AppendLine("            response.Result.Should().BeOfType<BadRequestObjectResult>();");
+            sb.Append(Environment.NewLine);
             sb.AppendLine("        }");
             sb.AppendLine("        #endregion");
             sb.AppendLine("    }");
