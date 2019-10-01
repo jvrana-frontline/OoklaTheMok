@@ -98,15 +98,40 @@ namespace OoklaTheMok
                         f.FieldLengthMax = false;
                     }
                 }
+                f.ConvertField();
+                //defaults
+                switch (f.ModifiedFieldType)
+                {
+                    case "string":
+                        f.DefaultValue = "\"\"";
+                        break;
+                    case "DateTime":
+                    case "DateTime?":
+                        f.DefaultValue = "new System.DateTime(1900, 1, 1)";
+                        break;
+                    case "bool":
+                        f.DefaultValue = "true";
+                        break;
+                    case "int":
+                    case "int?":
+                    case "float":
+                    case "decimal":
+                        f.DefaultValue = "0";
+                        break;
+                    default:
+                        f.DefaultValue = "\"\"";
+                        break;
+                }
+
 
                 td.Fields.Add(f);
 
             }
 
-            foreach (var f in td.Fields)
-            {
-                f.ConvertField();
-            }
+            //foreach (var f in td.Fields)
+            //{
+            //    f.ConvertField();
+            //}
             td.UpdateIdField();
 
             return td;
@@ -207,7 +232,7 @@ namespace OoklaTheMok
 
             foreach (FieldDetails field in details.Fields)
             {
-                sb.AppendLine($@"            builder.Property(e => e.{field.ModifiedFieldName}).HasColumnName(""{field.FieldName}"");");
+                sb.AppendLine($@"            builder.Property(e => e.{field.ModifiedFieldName}).HasColumnName(""{field.FieldName}"").HasDefaultValue({field.DefaultValue});");
             }
 
             sb.AppendLine("        }");
@@ -256,7 +281,7 @@ namespace OoklaTheMok
             sb.AppendLine("{");
             sb.AppendLine($"    public interface I{details.ClassName}Service");
             sb.AppendLine("    {");
-            sb.AppendLine($"        Task<List<{details.ClassName}>> GetByDistrictIdAsync(int DistrictId);");
+            sb.AppendLine($"        Task<List<{details.ClassName}>> GetByDistrictIdAsync(int districtId, bool onlyActive = true);");
             sb.AppendLine("    }");
             sb.AppendLine("}");
 
@@ -291,8 +316,9 @@ namespace OoklaTheMok
             sb.AppendLine("            _logger = logger;");
             sb.AppendLine("        }");
 
-            sb.AppendLine($"        public async Task<List<{details.ClassName}>> GetByDistrictIdAsync(int DistrictId)");
+            sb.AppendLine($"        public async Task<List<{details.ClassName}>> GetByDistrictIdAsync(int districtId, bool onlyActive = true)");
             sb.AppendLine("        {");
+            sb.AppendLine("            throw new NotImplementedException();");
             sb.AppendLine("            var result = string.Empty; //do stuff here");
             sb.AppendLine("            return result;");
             sb.AppendLine("        }");
@@ -350,9 +376,9 @@ namespace OoklaTheMok
             sb.AppendLine("        [HttpGet]");
             sb.AppendLine($@"        [ProducesResponseType(typeof(List<{details.ClassName}Model>), (int)HttpStatusCode.OK)]");
             sb.AppendLine(@"        [ProducesResponseType(typeof(BadRequestObjectResult), (int)HttpStatusCode.BadRequest)]");
-            sb.AppendLine($@"        async public Task<ActionResult<{details.ClassName}Model>> Get{details.ClassName}s(int orgId)");
+            sb.AppendLine($@"        async public Task<ActionResult<{details.ClassName}Model>> Get{details.ClassNamePlural}(int orgId, bool onlyActive = true)");
             sb.AppendLine("        {");
-            sb.AppendLine("            var district = await _districtService.GetById(orgId, true);");
+            sb.AppendLine("            var district = await _districtService.GetById(orgId, onlyActive);");
             sb.AppendLine($"            if (district == null)");
             sb.AppendLine("            {");
             sb.AppendLine($@"                return BadRequest(""invalid orgId."");");
@@ -383,9 +409,9 @@ namespace OoklaTheMok
             sb.Append(Environment.NewLine);
             sb.AppendLine("Add to appropriate sections of PlmContext.cs:");
             sb.Append(Environment.NewLine);
-            sb.AppendLine($"        DbSet<{details.ClassName}> {details.ClassName}s {{ get; set; }}");
+            sb.AppendLine($"        DbSet<{details.ClassName}> {details.ClassNamePlural} {{ get; set; }}");
             sb.AppendLine($"        modelBuilder.ApplyConfiguration(new {details.ClassName}Map());");
-            sb.AppendLine($"        public virtual DbSet<{details.ClassName}> {details.ClassName}s {{ get; set; }}");
+            sb.AppendLine($"        public virtual DbSet<{details.ClassName}> {details.ClassNamePlural} {{ get; set; }}");
             sb.Append(Environment.NewLine);
             sb.Append(Environment.NewLine);
             sb.AppendLine("Add to appropriate sections of Startup.cs:");
@@ -468,10 +494,10 @@ namespace OoklaTheMok
             sb.AppendLine($@"            ac.Should().ThrowExactly<ArgumentNullException>().Where(ex => ex.ParamName == ""{details.ClassName.ToLower()}Service"");");
             sb.AppendLine("        }");
             sb.Append(Environment.NewLine);
-            sb.AppendLine($"        #region Get{details.ClassName}s");
+            sb.AppendLine($"        #region Get{details.ClassNamePlural}");
             sb.Append(Environment.NewLine);
             sb.AppendLine("        [Fact]");
-            sb.AppendLine($"        public async Task Get{details.ClassName}s_ReturnsModels()");
+            sb.AppendLine($"        public async Task Get{details.ClassNamePlural}_ReturnsModels()");
             sb.AppendLine("        {");
             sb.AppendLine("            // Arrange");
             sb.AppendLine("            var orgId = 12345;");
@@ -490,7 +516,7 @@ namespace OoklaTheMok
             sb.AppendLine("            _mockService.Setup(m => m.GetByDistrictIdAsync(It.IsAny<int>())).ReturnsAsync(entities);");
             sb.Append(Environment.NewLine);
             sb.AppendLine("            // Act");
-            sb.AppendLine($"            var response = await _controller.Get{details.ClassName}s(orgId);");
+            sb.AppendLine($"            var response = await _controller.Get{details.ClassNamePlural}(orgId);");
             sb.Append(Environment.NewLine);
             sb.AppendLine("            // Assert");
             sb.AppendLine("            response.Result.Should().BeOfType<OkObjectResult>()");
@@ -520,7 +546,7 @@ namespace OoklaTheMok
             sb.AppendLine("            _mockService.Setup(m => m.GetByDistrictIdAsync(It.IsAny<int>(), true)).ReturnsAsync(entities);");
             sb.Append(Environment.NewLine);
             sb.AppendLine("            // Act");
-            sb.AppendLine($"            var response = await _controller.Get{details.ClassName}s(orgId);");
+            sb.AppendLine($"            var response = await _controller.Get{details.ClassNamePlural}(orgId);");
             sb.Append(Environment.NewLine);
             sb.AppendLine("            // Assert");
             sb.AppendLine("            response.Result.Should().BeOfType<BadRequestObjectResult>();");
@@ -558,7 +584,7 @@ namespace OoklaTheMok
             sb.AppendLine("        }");
             sb.Append(Environment.NewLine);
             sb.AppendLine("        [Fact]");
-            sb.AppendLine($"        public async Task GetByDistrictIdAsync_Returns{details.ClassName}s()");
+            sb.AppendLine($"        public async Task GetByDistrictIdAsync_Returns{details.ClassNamePlural}()");
             sb.AppendLine("        {");
             sb.AppendLine("            //Arrange");
             sb.AppendLine("            var districtId = 12345;");
@@ -571,7 +597,7 @@ namespace OoklaTheMok
             sb.AppendLine($@"                new {details.ClassName}{{Id = 1004 , {details.ClassName}Name = ""test name 4""}}");
             sb.AppendLine("            };");
             sb.Append(Environment.NewLine);
-            sb.AppendLine($"            _readWriteContext.{details.ClassName}s.AddRange({details.ClassName}Entities);");
+            sb.AppendLine($"            _readWriteContext.{details.ClassNamePlural}.AddRange({details.ClassName}Entities);");
             sb.Append(Environment.NewLine);
             sb.AppendLine("            _readWriteContext.SaveChanges();");
             sb.Append(Environment.NewLine);

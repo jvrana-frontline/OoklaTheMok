@@ -16,6 +16,7 @@ namespace OoklaTheMok.Models
         public bool IsKey { get; set; }
         public string ModifiedFieldName { get; set; }
         public string ModifiedFieldType { get; set; }
+        public string DefaultValue { get; set; }          
 
         public string NullText
         {
@@ -46,6 +47,10 @@ namespace OoklaTheMok.Models
                     break;
                 case "int":
                     ModifiedFieldType = "int";
+                    if (Nullable)
+                    {
+                        ModifiedFieldType += "?";
+                    }
                     break;
                 case "rl":
                     ModifiedFieldType = "float";
@@ -60,7 +65,10 @@ namespace OoklaTheMok.Models
                 case "bit":
                     ModifiedFieldType = "bool";
                     break;
-                 default:
+                case "mon":
+                    ModifiedFieldType = "decimal";
+                    break;
+                default:
                      ModifiedFieldType = prefix;
                     break;
             }
