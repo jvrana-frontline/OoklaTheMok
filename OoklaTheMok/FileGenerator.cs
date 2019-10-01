@@ -378,14 +378,14 @@ namespace OoklaTheMok
             sb.AppendLine(@"        [ProducesResponseType(typeof(BadRequestObjectResult), (int)HttpStatusCode.BadRequest)]");
             sb.AppendLine($@"        async public Task<ActionResult<{details.ClassName}Model>> Get{details.ClassNamePlural}(int orgId, bool onlyActive = true)");
             sb.AppendLine("        {");
-            sb.AppendLine("            var district = await _districtService.GetById(orgId, onlyActive);");
+            sb.AppendLine("            var district = await _districtService.GetById(orgId, true);");
             sb.AppendLine($"            if (district == null)");
             sb.AppendLine("            {");
             sb.AppendLine($@"                return BadRequest(""invalid orgId."");");
             sb.AppendLine("            }");
             sb.AppendLine("            else");
             sb.AppendLine("            {");
-            sb.AppendLine($"            var {details.ClassName.ToLower()}s = await _{details.ClassName.ToLower()}Service.GetByDistrictIdAsync(district.Id);");
+            sb.AppendLine($"            var {details.ClassName.ToLower()}s = await _{details.ClassName.ToLower()}Service.GetByDistrictIdAsync(district.Id, onlyActive);");
             sb.AppendLine($"            return Ok({details.ClassName.ToLower()}s.Select(d => _mapper.Map<{details.ClassName}Model>(d)).ToList());");
             sb.AppendLine("            }");
             sb.AppendLine("        }");
